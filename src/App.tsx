@@ -69,7 +69,7 @@ import Expenses from './components/Expenses';
 import Reports from './components/Reports';
 import InvoiceModal from './components/InvoiceModal';
 
-export default function App() {
+function App() {
   // Master Central React States
   const [products, setProducts] = useState<Product[]>(INITIAL_PRODUCTS);
   const [invoices, setInvoices] = useState<Invoice[]>(INITIAL_INVOICES);
@@ -878,3 +878,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
