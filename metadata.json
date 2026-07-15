@@ -1,0 +1,6 @@
+{
+  "name": "إدارة محل الموبايل والصيانة",
+  "description": "برنامج احترافي متكامل لإدارة المبيعات والمنتجات والصيانة والعملاء والموردين ومصروفات محل الموبايل مع تصدير تقارير Excel",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styles for professional cashier-like print layout */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Hide scrollbar for clean aesthetics but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom focus rings and styling */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-blue-500);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
